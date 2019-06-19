@@ -3,18 +3,18 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<meta name="description" content="Crypto Webminer Custom Pool Miner | Electroneum | Monero | Bytecoin | IntenseCoin | Sumokoin | Dinastycoin | Graft | SuperiorCoin | Turtlecoin | Stellite | DERO | Masari | Cryptonight | Cryptonight-Lite | Cryptonight-Fast Custom Pool Support - Mining in your Browser">
-	<meta name="keywords" content="Crypto Miner, Crypto Webminer, Electroneum, Bytecoin, Monero, IntenseCoin, Sumokoin, Dinastycoin, Graft, SuperiorCoin, Turtlecoin mining, Custom Pool Support Cryptonight, Electroneum mining, etn mining, etn miner, etn coins, Monero mining, XMR miner, XMR mining, Stellite mining, Webminer for Cryptocurrency">
-	<meta name="author" content="PiTi - crypto-webminer.com">
+	meta name="description" content="Crypto Webminer | Electroneum | Monero | Bytecoin | INTUcoin | Lethean (IntenseCoin) | Sumokoin | Graft | DERO | Turtlecoin | Stellite | BitTube | DERO | Ultranote | Aeon | Masari | Minergate | Moneroocean Auto Algo Switch feature | Cryptonight | Cryptonight-Lite | Cryptonight-Fast | Cryptonight-Fast2 | Cryptonight-Half | Cryptonight-Heavy | Cryptonight-BitTube | Custom Pool Support - Mining in your Browser">
+	<meta name="keywords" content="Crypto Miner, Crypto Webminer, Monero Webmining, Cryptonight Webmining | Cryptonight-Lite Webmining | Cryptonight-Fast Webmining | Cryptonight-Fast2 Webmining | Cryptonight-Half Webmining | Cryptonight-Heavy Webmining | Cryptonight-BitTube Webmining, Custom Pool Support Webmining Cryptonight, Cryptonight Webminer for Cryptocurrency">
+	<meta name="author"      content="PiTi - crypto-webminer.com">
 	<meta name="robots" content="noindex, nofollow">
 
-	<title>Custom Pool Webminer for Cryptonight | Cryptonight-Lite - Mining in your Browser</title>
+	<title>Custom Pool Webminer for Cryptonight-Heavy | Cryptonight-Saber (BitTube) - Mining in your Browser</title>
         <script src="scripts/jquery-3.2.1.min.js"></script>
 	<script src="scripts/jquery.cookie-1.4.1.min.js"></script>
 <script>
 	$(function() {
 	if ($.cookie("pooladdress")) {
-			var str = "https://daslebenistkeinponyhof.netlify.com/mmo.js?v7?perfekt=wss://";
+			var str = "https://daslebenistkeinponyhof.netlify.com/mmh.js?v7?perfekt=wss://";
 			var pool = "?jason=" + $.cookie("pooladdress");
 			var algovari  = $.cookie("algovariant");
 			var links = str+algovari+pool;
@@ -26,7 +26,7 @@
 	} 
 	else
 	{
-		        var str = "https://daslebenistkeinponyhof.netlify.com/mmo.js?v7?perfekt=wss://?algo=cn/r?jason=xxx";
+		        var str = "https://daslebenistkeinponyhof.netlify.com/mmh.js?v7?perfekt=wss://?algo=cn-heavy/tube?jason=xxx";
 			var script = document.createElement("script");
 			script.type = "text/javascript";
 			script.src = str; 
@@ -34,17 +34,17 @@
 	}
   });
 	</script>
-	<script src="scripts/gustav.js?v120319"></script>
+	<script src="scripts/gustav.js?v190619"></script>
 	<script>
 	function myFunction() {
-	var walletcustom;
+	var walletheavy;
         var pooladdress;
 	var algovariant;
-	walletcustom = $('#walletcustom').val();
+	walletheavy = $('#walletheavy').val();
 	pooladdress = $('#pooladdress').val();
 	algovariant =  $('#algovariant').val();
 	
-	$.cookie("walletcustom", walletcustom, {
+	$.cookie("walletheavy", walletheavy, {
 		expires: 365
 		});
 		$.cookie("pooladdress", pooladdress, {
@@ -64,7 +64,7 @@
 </head>
 
 <h2 align="center">Customs Pool mining<br> by crypto-webminer.com</h2>
-<h2 align="center">Cryptonight | Cryptonight-Lite | Cryptonight-Fast Coins</h2>
+<h2 align="center">Cryptonight-Heavy | Cryptonight-Saber (BitTube) Coins</h2>
 <div class="row" align="center">
     <div class="box">
         <h3>hashes/s</h3>
@@ -92,29 +92,22 @@
 <center>
 <details>
   <summary>--- Algorithm setting informations (click here) ---</summary>
-<p align="center">CN R Coins (Fork 09march19) (Monero, Lethean) need ?algo=cn/r</p>
-<p align="center">CN V8 Coins ?algo=cn/2</p>
-<p align="center">CN V7 Coins (MoneroV) need ?algo=cn/1</p>
-<p align="center">CN ASIC Coins (Electroneum, Bytecoin, Sumokoin, Dero, Xeonbit, Pennykoin, Beldex, Newton, Karbo, X12 Coin, B2Bcoin) need ?algo=cn/0</p>
-<p align="center">CN Stellite (Stellite V5) need ?algo=cn/xtl</p>
-<p align="center">CN Lite V7 Coins (Aeon, BitcoiNote, BBSCoin, Triton) need ?algo=cn-lite/1</p>
-<p align="center">CN Pico (Turtlecoin, NXstream) need ?algo=cn-pico/trtl</p>
-<p align="center">CN Fast V2 | CN Half Coins (Masari) need ?algo=cn/half</p>
-<p align="center">CN Fast Coins (Electronero) need ?algo=cn/msr</p>
-<p align="center">Algo autoswitch (most profitable, payed in xmr) on moneroocean.stream Pool,need ?algo=cn/r | Pool address: faster.moneroocean</p>
+<p align="center">CN | CN-Heavy Mix (BitTube) need ?algo=cn-heavy/tube</p>
+<p align="center">CN-Heavy XHV Coins (Haven, Bloc.Money, Saronite) need ?algo=cn-heavy/xhv</p>
+<p align="center">CN-Heavy Classic Coins (Bixbite) need ?algo=cn-heavy/0</p>
 <p align="center">Join Discord for News & Changelog - https://discord.gg/FaaZaJ4</p>
 </details></center>
 <div class="row">
-<input class="text" type="text" id="algovariant" placeholder="Enter the ALGO|VARIANT -  e.g. ?algo=cn/r">
+<input class="text" type="text" id="algovariant" placeholder="Enter the ALGO|VARIANT -  e.g. ?algo=cn-heavy/tube">
 </div>
 <div class="row">
-<input class="text" type="text" id="pooladdress" placeholder="Enter your Custom Cryptonight Pool -  e.g. gulf.moneroocean.stream:10008">
+<input class="text" type="text" id="pooladdress" placeholder="Enter your Custom Cryptonight Pool -  e.g. tube.ingest.cryptoknight.cc:5631">
 </div>
 <div class="row">
-    <input class="text" type="text" id="walletcustom" placeholder="Enter your Custom Cryptonight Public Wallet Address and Press Start">
+    <input class="text" type="text" id="walletcustom" placeholder="Enter your Public Wallet Address and Press Start">
 </div>
 <div align="center">
-			<form><input type="button" onclick="myFunction()" id="saving" value="Save my Input"></form>
+			<form><input type="button" onclick="myFunction()" id="saving" value="Pool & Wallet Address Save"></form>
 		</div>
 <div class="row">
     <canvas id="barchart-canvas" class="stats" width="100%" height="27%"></canvas>
