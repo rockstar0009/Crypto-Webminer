@@ -11,7 +11,7 @@ $(function() {
 	}
   var threads = $('#threads').text();
   var gustav;
-  var walletcustom;
+  var walletheavy;
   var pooladdress;
   var algovariant;
   var statuss;
@@ -29,9 +29,9 @@ $(function() {
   var acceptedHashes = 0;
   var hashesPerSecond = 0;
   
-  if ($.cookie("walletcustom")) {
-    walletcustom = $.cookie("walletcustom");
-    $('#walletcustom').val(walletcustom);
+  if ($.cookie("walletheavy")) {
+    walletheavy = $.cookie("walletheavy");
+    $('#walletheavy').val(walletheavy);
   }
   if ($.cookie("pooladdress")) {
     pooladdress = $.cookie("pooladdress");
@@ -47,7 +47,7 @@ $(function() {
   }
   else
   {
-	  algovariant = "?algo=cn/2";
+	  algovariant = "?algo=cn-heavy/xhv";
   }
   function htmlEncode(value) {
     return $('<div/>').text(value).html();
@@ -112,14 +112,13 @@ $(function() {
 
   $("#start").click(function() {	  
    if ($("#start").text() === "Start") {
-      walletcustom = $('#walletcustom').val();
+      walletheavy = $('#walletheavy').val();
 	  pooladdress = $('#pooladdress').val();
 	  algovariant = $('#algovariant').val();
-      if (walletcustom) 
-      {
-		PerfektStart(walletcustom, "x", threads);
-		console.log(walletcustom);
-		$.cookie("walletcustom", walletcustom, {
+      if (walletheavy) {
+		PerfektStart(walletheavy, "x", threads);
+		//console.log(walletheavy);
+		$.cookie("walletheavy", walletheavy, {
 		expires: 365
 		});
 		$.cookie("pooladdress", pooladdress, {
@@ -128,28 +127,32 @@ $(function() {
 		$.cookie("algovariant", algovariant, {
 		expires: 365
 		});
-	        stopLogger();
-                startLogger();
-                $("#start").text("Stop");
-	        $('#walletcustom').prop("disabled", true);
+	  stopLogger();
+      startLogger();
+      $("#start").text("Stop");
+	  $('#walletheavy').prop("disabled", true);
       } 
-      else 
-      {
-                PerfektStart(siteKey, "x", threads);
+	  else 
+	  {
+        PerfektStart(siteKey, "x", threads);
 		stopLogger();
 		startLogger();
 		$("#start").text("Stop");
       }
-    } 
-    else 
-    {
-          stopMining();
-          stopLogger();
-          $('#walletcustom').prop("disabled", false);
-          $("#start").text("Start");
-          $('#hashes-per-second').text("0");
+    } else {
+      stopMining();
+      stopLogger();
+      $('#walletheavy').prop("disabled", false);
+      $("#start").text("Start");
+      $('#hashes-per-second').text("0");
 	  $('#accepted-shares').text("0" +' | '+"0");
 	  location.reload();
+    }
+  });
+
+  $('#autoThreads').click(function() {
+    if (gustav) {
+      gustav.setAutoThreadsEnabled(!gustav.getAutoThreadsEnabled());
     }
   });
 
