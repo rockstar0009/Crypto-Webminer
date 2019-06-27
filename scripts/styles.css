@@ -95,13 +95,13 @@ span.divide {
 }
 
 button {
-	
+	#32d1b1;
 	
 	margin: 32px 0 0 0;
 	width: 100%;
 	font-size: 18px;
 	cursor: pointer;
-	background: #32d1b1;
+	background: #63055a;
   background-image: -webkit-linear-gradient(top, #63055a, #63055a);
   background-image: -moz-linear-gradient(top, #63055a, #63055a);
   background-image: -ms-linear-gradient(top, #63055a, #63055a);
@@ -219,11 +219,11 @@ th { color: #555; text-transform: uppercase; font-weight: normal; font-size:12px
 input[type=button], input[type=submit], input[type=reset] {
 
 	background: #32d1b1;
-  background-image: -webkit-linear-gradient(top, #32d1b1, #2e8078);
-  background-image: -moz-linear-gradient(top, #32d1b1, #2e8078);
-  background-image: -ms-linear-gradient(top, #32d1b1, #2e8078);
-  background-image: -o-linear-gradient(top, #32d1b1, #2e8078);
-  background-image: linear-gradient(to bottom, #32d1b1, #2e8078);
+  background-image: -webkit-linear-gradient(top, #63055a, #63055a);
+  background-image: -moz-linear-gradient(top, #63055a, #63055a);
+  background-image: -ms-linear-gradient(top, #63055a, #63055a);
+  background-image: -o-linear-gradient(top, #63055a, #63055a);
+  background-image: linear-gradient(to bottom, #63055a, #63055a);
   -webkit-border-radius: 14;
   -moz-border-radius: 14;
   border-radius: 14px;
