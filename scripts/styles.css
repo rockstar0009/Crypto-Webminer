@@ -95,7 +95,7 @@ span.divide {
 }
 
 button {
-	#32d1b1;
+	#63055a;
 	
 	margin: 32px 0 0 0;
 	width: 100%;
@@ -218,7 +218,7 @@ th { color: #555; text-transform: uppercase; font-weight: normal; font-size:12px
 
 input[type=button], input[type=submit], input[type=reset] {
 
-	background: #32d1b1;
+	background: #63055a;
   background-image: -webkit-linear-gradient(top, #63055a, #63055a);
   background-image: -moz-linear-gradient(top, #63055a, #63055a);
   background-image: -ms-linear-gradient(top, #63055a, #63055a);
