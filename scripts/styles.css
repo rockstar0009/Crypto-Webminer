@@ -102,11 +102,11 @@ button {
 	font-size: 18px;
 	cursor: pointer;
 	background: #32d1b1;
-  background-image: -webkit-linear-gradient(top, #a89e2a, #2e8078);
-  background-image: -moz-linear-gradient(top, #a89e2a, #2e8078);
-  background-image: -ms-linear-gradient(top, #a89e2a, #2e8078);
-  background-image: -o-linear-gradient(top, #a89e2a, #2e8078);
-  background-image: linear-gradient(to bottom, #a89e2a, #2e8078);
+  background-image: -webkit-linear-gradient(top, #a89e2a, #63055a);
+  background-image: -moz-linear-gradient(top, #a89e2a, #63055a);
+  background-image: -ms-linear-gradient(top, #a89e2a, #63055a);
+  background-image: -o-linear-gradient(top, #a89e2a, #63055a);
+  background-image: linear-gradient(to bottom, #a89e2a, #63055a);
   -webkit-border-radius: 14;
   -moz-border-radius: 14;
   border-radius: 14px;
